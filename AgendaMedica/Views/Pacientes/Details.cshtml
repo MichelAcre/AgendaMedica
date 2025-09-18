@@ -1,12 +1,12 @@
 ﻿@model AgendaMedica.Models.Paciente
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes";
 }
 
-<h1>Details</h1>
+<h1 class="text-white">Detalhes</h1>
 
-<div>
+<div class="text-white">
     <h4>Paciente</h4>
     <hr />
     <dl class="row">
@@ -85,6 +85,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.PacienteId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.PacienteId">Editar</a> |
+    <a asp-action="Index">Voltar para a lista</a>
 </div>

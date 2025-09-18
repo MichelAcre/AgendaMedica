@@ -1,8 +1,31 @@
 ﻿@{
-	ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Home";
 }
 
 <div class="text-center bg-dark text-white">
-	<h1 class="display-4">Bem-Vindo!</h1>
-	<p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+	<h1 class="display-4 fw-bold">Bem-Vindo!</h1>
+	<p>Seja muito bem-vindo à nossa agenda médica digital!</p>
+	<p>Entre ou registre sua conta para obter acesso aos nossos serviços.</p>
+
+
+	<a class="btn btn-outline btn-dark btn-outline-light m-3 row-6" asp-area="Identity" asp-page="/Account/Login">Entrar</a>
+	<a class="btn btn-outline btn-dark btn-outline-light m-3 row-12" asp-area="Identity" asp-page="/Account/Login">Registrar</a>
+	<hr />
+	<div>
+		<h1 class="fw-bold my-5">Funções do site</h1>
+		<div class="row justify-content-center">
+			<div class="col-4 bg-black text-white mx-5 p-3 rounded" style="max-width: 300px">
+				<h2 class="fw-bold">Agendar</h2>
+				<p>Você consegue agendar consultas com seus pacientes mais facilmente com nossos bancos de dado!</p>
+			</div>
+						<div class="col-4 bg-black text-white mx-5 p-3 rounded" style="max-width: 300px">
+				<h2 class="fw-bold">Confiança</h2>
+				<p>Nossos sistemas de confiança sempre protegem seus dados e os dados de seus pacientes.</p>
+			</div>
+						<div class="col-4 bg-black text-white mx-5 p-3 rounded" style="max-width: 300px">
+				<h2 class="fw-bold">Organização</h2>
+				<p>Cada lugar do site é feito para que a sua agenda fique o mais organizado possível.</p>
+			</div>
+		</div>
+	</div>
 </div>
